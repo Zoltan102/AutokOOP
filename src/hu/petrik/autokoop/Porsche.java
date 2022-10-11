@@ -1,6 +1,6 @@
 package hu.petrik.autokoop;
 
-public class Porsche implements Auto, Comparable<Auto>{
+public class Porsche implements Auto{
     private double sebesseg;
 
     public Porsche(double sebesseg) {
@@ -15,18 +15,5 @@ public class Porsche implements Auto, Comparable<Auto>{
     @Override
     public double getSebesseg() {
         return this.sebesseg;
-    }
-
-    @Override
-    public int compareTo(Auto a) {
-        int compare;
-        if(this.getSebesseg() - a.getSebesseg() < 0){
-            compare = -1;
-        }else if (this.getSebesseg() - a.getSebesseg() > 0){
-            compare = 1;
-        }else{
-            compare = 0;
-        }
-        return compare;
     }
 }

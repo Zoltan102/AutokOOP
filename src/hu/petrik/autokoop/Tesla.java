@@ -2,7 +2,7 @@ package hu.petrik.autokoop;
 
 import java.util.Random;
 
-public class Tesla implements Auto {
+public class Tesla implements Auto{
     private double sebesseg;
 
     public Tesla() {
@@ -23,6 +23,4 @@ public class Tesla implements Auto {
     public double getSebesseg() {
         return this.sebesseg;
     }
-
-
 }
